@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\scripts\camera_test.cs" />
     <Compile Include="Assets\scripts\wxy_move.cs" />
+    <Compile Include="Assets\scripts\collide.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

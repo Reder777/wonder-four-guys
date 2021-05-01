@@ -25,4 +25,12 @@ public class wxy_move : MonoBehaviour
         if (RigidbodyComponent == null) RigidbodyComponent = GetComponent<Rigidbody2D>();
         RigidbodyComponent.velocity = movement;
     }
+    private void OnTriggerEnter2D(Collider2D othercollision)
+    {
+        collide coll= othercollision.gameObject.GetComponent<collide>();
+        if (coll.ishole == true)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
